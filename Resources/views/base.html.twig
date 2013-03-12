@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/spionekexamplemenu/css/style.css') }}"
+    </head>
+    <body>
+        {{ knp_menu_render('SpionekExampleMenuBundle:Builder:mainMenu') }}
+        <a href="{{ path('menu')}}">admin</a>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

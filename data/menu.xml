@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menus>
+    <menu>
+        <title>Element 1</title>
+        <contents>jakaś tam treść</contents>
+    </menu>
+    <menu>
+        <title>Element 2</title>
+        <contents>jakaś tam kolejna treść</contents>
+    </menu>
+</menus>
