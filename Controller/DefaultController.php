@@ -11,7 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 /**
  * Default controller.
  *
- * @Route("/")
+ * @Route("/text")
  */
 class DefaultController extends Controller
 {
@@ -24,7 +24,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $entity = $em->getRepository('SpionekExampleMenuBundle:Menu')->findOneBySlug($slug);
         if (!$entity) {
-            $this->createNotFoundException('Not found menu');
+            throw $this->createNotFoundException('Not found menu');
         }
         return array('entity' => $entity);
     }
