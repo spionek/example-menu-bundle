@@ -16,5 +16,5 @@
     "autoload": {
         "psr-0": { "Spionek\\ExampleMenuBundle": "" }
     },
-    "target-dir": "Spionek/ExampleMenuBundle",
+    "target-dir": "Spionek/ExampleMenuBundle"
 }
