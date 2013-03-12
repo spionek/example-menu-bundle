@@ -11,9 +11,15 @@ class MenuType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('contents')
             ->add('slug')
+            ->add('title')
+            ->add('contents', 'textarea', array(
+                'attr' => array(
+                    'class' => 'tinymce',
+                    'data-theme' => 'advanced'
+                )
+            ))
+
         ;
     }
 
