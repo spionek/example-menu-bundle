@@ -1,7 +1,7 @@
 {
     "name": "spionek/example-menu-bundle",
     "type": "symfony-bundle",
-    "description": "Menu ..",
+    "description": "Menu for testing",
     "keywords": [],
     "license": "MIT",
     "authors": [
